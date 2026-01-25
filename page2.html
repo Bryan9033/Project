@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-.container{
-    border-radius: 20px;
-    text-align: center;
-    background-color: #BDE8F5;
-}
+        .container {
+            text-align: center;
+            background-color: #faf3e1;
+        }
 
-label{
-    font-size: 25px;
-}
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background-color: #e9c997;
+        }
 
-input{
-    margin: 30px 0;
-    border-radius: 5px;
-    font-size: 1.4em;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-
-.btn1{
-    background-color: #FA5C5C;
-    padding: 5px 10px;
-    font-size: 20px;
-}
-
-.btn2{
-    background-color: rgb(33, 190, 33);
-    padding: 5px 10px;
-    font-size: 20px;
-}
-</style>
-
+        input {
+            margin: 20px;
+        }
+    </style>
 </head>
+
 <body>
+
     <div class="container">
-        <label for="fname">First Name:</label>
-        <input type="text" class="fname" id="fname" name="fname">
-        <br>
+        <nav class="nav-bar">
+            <ul>HOME</ul>
+            <ul>|</ul>
+            <ul>REGISTER</ul>
+            <ul>|</ul>
+            <ul>ACCEPTED PLAYERS</ul>
+        </nav>
 
-        <label for="mname">Middle Name:</label>
-        <input type="text" class="mname" id="mname" name="mname">
-        <br>
+        <form action="">
+            <label for="fname">FIRST NAME:</label>
+            <br>
+            <input type="text" class="fname">
+            <br>
+            <label for="mname">MIDDLE NAME:</label>
+            <br>
+            <input type="text" class="mname">
+            <br>
+            <label for="lname">LAST NAME:</label>
+            <br>
+            <input type="text" class="lname">
+            <br>
+            <label for="sex">SEX:</label>
+            <input type="radio" id="Male" name="Sex" value="Male" required>
+            <label for="Male">Male</label>
+            <input type="radio" id="female" name="Sex" value="female" required>
+            <label for="female">Female</label>
+            <br>
+            <label for="age">AGE:</label>
+            <br>
+            <input type="number" class="age">
+            <br>
+            <br>
+            <label for="email">EMAIL:</label>
+            <br>
+            <input type="email" class="email">
+            <br>
+            <label for="bday">BIRTH DATE:</label>
+            <br>
+            <input type="date" class="bday">
+            <br>
+            <label for="birthplace">BIRTH PLACE:</label>
+            <br>
+            <input type="text" class="birthplace">
+            <br>
+            <label for="address">HOME ADDRESS:</label>
+            <br>
+            <input type="text" class="address">
+            <br>
+            <label for="contact">CONTACT NUMBER:</label>
+            <br>
+            <input type="number" class="contact">
+        </form>
 
-        <label for="lname">Last Name:</label>
-        <input type="text" class="lname" id="lname" name="lname">
-        <br>
-        
-        <label for="sex">Sex:</label>
-
-        <input type="radio" id="Male" name="Sex" value="Male" required>
-        <label for="Male">Male</label>
- 
-        <input type="radio" id="female" name="Sex" value="female" required>
-        <label for="female">Female</label>
-        <br>
-
-        <label for="age">Age:</label>
-        <input type="number">
-        <br>
-
-        <label for="email">Email:</label>
-        <input type="email">
-        <br>
-
-        <label for="bday">Birth Date:</label>
-        <input type="date">
-        <br>
-
-        <label for="bplace">Birth Place:</label>
-        <input type="text">
-        <br>
-
-        <label for="homeadd">Home Address:</label>
-        <input type="text">
-        <br>
-
-        <button class="btn1" id="btn1"><a href="page1.html">Back</a></button>
-        <button class="btn2" id="btn2"><a href="page3.html">Submit</a></button>
     </div>
+
+
 </body>
+
 </html>
