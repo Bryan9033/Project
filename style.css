@@ -6,6 +6,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+<!-- navbar -->
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -22,6 +24,51 @@ body {
     margin: 0 2rem;
 }
 
+<!-- page 1 -->
+
+.container {
+    background-color: #FFEBC9;
+    padding: 2rem;
+    text-align: center;
+}
+
+.team-logo {
+    max-width: 500px;
+    min-width: 300px;
+    height: 350px;
+    margin: 0 auto 2rem;
+    display: block;
+}
+
+.h1 {
+    margin-bottom: 1.5rem;
+}
+
+.paragraphs {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.register-btn {
+    background-color: #0bae60;
+    border: none;
+    height: 75px;
+    width: 275px;
+    margin: 30px;
+    border-radius: 40px;
+}
+
+.register-btn a {
+    font-size: x-large;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+
+<!-- page 2 -->
 
 
 .form-container {
@@ -103,43 +150,3 @@ input[type="date"] {
 }
 
 
-.container {
-    background-color: #FFEBC9;
-    padding: 2rem;
-    text-align: center;
-}
-
-.team-logo {
-    max-width: 500px;
-    min-width: 300px;
-    height: 350px;
-    margin: 0 auto 2rem;
-    display: block;
-}
-
-.h1 {
-    margin-bottom: 1.5rem;
-}
-
-.paragraphs {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-.register-btn {
-    background-color: #0bae60;
-    border: none;
-    height: 75px;
-    width: 275px;
-    margin: 30px;
-    border-radius: 40px;
-}
-
-.register-btn a {
-    font-size: x-large;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-}
