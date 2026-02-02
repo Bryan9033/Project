@@ -4,58 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Onic PH Team Registration</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #ffe7c2;
-        }
-
         .navbar {
-            font-weight: bold;
-            margin-bottom: 20px;
-            background-color: #e9c997;
-            padding: 20px;
-        }
-
-        .navbar ul {
-            list-style-type: none;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .navbar li{
-            margin: 0 25px;
+            background-color: #e9c997;
+            padding: 1rem;
+            text-align: center;
         }
 
         .navbar a {
+            color: #000;
             text-decoration: none;
-            color: black;
+            font-weight: bold;
+            margin: 0 2rem;
         }
 
-
-
-        .logo {
-            max-width: 300px;
-            height: 300px;
-            margin: auto;
+        .container {
+            background-color: #FFEBC9;
+            padding: 2rem;
+            text-align: center;
         }
 
-        .btn {
+        .team-logo {
+            max-width: 500px;
+            min-width: 300px;
+            height: 350px;
+            margin: 0 auto 2rem;
+            display: block;
+        }
+
+        .h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .paragraphs {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .register-btn {
             background-color: #0bae60;
             height: 75px;
             width: 275px;
@@ -63,49 +62,33 @@
             border-radius: 40px;
         }
 
-        .paragraphs {
-            padding: 40px;
-        }
-
-
-        .btn a {
+        .register-btn a {
+            font-size: x-large;
+            font-weight: bold;
+            color: #000;
             text-decoration: none;
-            color: black;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="page2.html">REGISTER</a></li>
-                <li><a href="page3.html">ACCEPTED PLAYERS</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="page2.html">REGISTER</a>
+        <a href="page3.html">ACCEPTED PLAYERS</a>
+    </nav>
 
+    <main class="container">
+        <img src="onicph.png" alt="Onic PH Team Logo" class="team-logo">
 
-        <div class="paragraphs">
-            <img class="logo" src="onicph.png" alt="">
+        <h1 class="h1">Welcome to the Onic Ph Team<br>We're registering players now join us <br> today!</h1>
+        <p class="paragraphs">We're a passionate and driven group of athletes and supporters dedicated to teamwork, growth, and
+            sportsmanship. Whether you're here to compete, learn, or be part of something great, you're in the right
+            place. Our mission is to bring together players of all skill levels, build strong bonds, and chase success
+            both on and off the field. Join us and be part of a team that values heart, dedication, and community!</p>
+            <button class="register-btn"><a href="page2.html">REGISTER NOW</a></button>
+    </main>
 
-            <h1>Welcome to the Onic Ph Team</h1>
-            <h1>We’re registering players now join us <br> today!</h1>
-            <p>We’re a passionate and driven group of athletes and supporters dedicated to <br> teamwork, growth, and
-                sportsmanship. Whether you’re here to compete, learn, <br> or be part of something great, you’re in the
-                right
-                place. Our mission is to bring <br> together players of all skill levels, build strong bonds, and chase
-                success
-                both <br> on and off the field. Join us and be part of a team that values heart, dedication, <br> and
-                community!
-            </p>
-            <button class="btn">
-                <a href="page2.html">
-                    <h1>REGISTER NOW</h1>
-                </a>
-            </button>
-        </div>
-    </div>
 </body>
 
 </html>
