@@ -1,181 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Player Registration</title>
     <style>
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        .form {
             background-color: #faf3e1;
-            height: 1100px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
-        .nav-bar {
-            font-weight: bold;
-            margin-bottom: 20px;
-            background-color: #e9c997;
-            padding: 20px;
-        }
-
-        .nav-bar ul {
-            list-style-type: none;
+        .navbar {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .nav-bar li {
-            margin: 0 25px;
-        }
-
-        .nav-bar a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .nav-bar :hover {
-            color: #a09583;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        input[type="date"],
-        select {
-            width: 25%;
-            background-color: #d9d9d9;
-            height: 20px;
-        }
-
-
-        .information {
-            margin: 40px;
+            background-color: #e9c997;
+            padding: 1rem;
             text-align: center;
         }
 
-
-        .btn1 {
-            background-color: #ff5757;
-            height: 40px;
-            width: 100px;
-            border-radius: 10px;
-            font-weight: bold;
-        }
-
-        .btn2 {
-            background-color: #1ae182;
-            height: 40px;
-            width: 100px;
-            border-radius: 10px;
-            font-weight: bold;
-        }
-
-        .btn1 a,
-        .btn2 a {
+        .navbar a {
+            color: #000;
             text-decoration: none;
-            color: black;
+            font-weight: bold;
+            margin: 0 2rem;
+        }
+
+
+
+        .form-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        label {
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: #D3D3D3;
+            border-radius: 2px;
+            font-size: 1rem;
+        }
+
+        .gender-group {
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .gender-option {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
         }
 
         .button-group {
             display: flex;
-            justify-content: center;
-            gap: 265px;
-            margin-top: 30px;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .button-group a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .back-btn {
+            background-color: #FF5252;
+            color: #000;
+            padding: 0.7rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .submit-btn {
+            background-color: #00E676;
+            color: #000;
+            padding: 0.7rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
         }
     </style>
 </head>
-
 <body>
+    <nav class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">REGISTER</a>
+        <a href="#">ACCEPTED PLAYERS</a>
 
-    <div class="form">
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="page2.html">REGISTER</a></li>
-                <li><a href="">ACCEPTED PLAYERS</a></li>
-            </ul>
-        </nav>
+    </nav>
 
-        <form action="">
-                <div class="information">
-                    <label for="fname">FIRST NAME:</label>
-                    <br>
-                    <input type="text" class="fname">
+    <div class="form-container">
+        <form>
+            <div class="info">
+                <label for="fname">FIRST NAME:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div class="info">
+                <label for="mname">MIDDLE NAME:</label>
+                <input type="text" id="mname" name="mname">
+            </div>
+
+            <div class="info">
+                <label for="lname">LAST NAME:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <div class="info gender-group">
+                <label>SEX:</label>
+                <div class="gender-option">
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">MALE</label>
                 </div>
-
-                <div class="information">
-                    <label for="mname">MIDDLE NAME:</label>
-                    <br>
-                    <input type="text" class="mname">
+                <div class="gender-option">
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">FEMALE</label>
                 </div>
+            </div>
 
-                <div class="information">
-                    <label for="lname">LAST NAME:</label>
-                    <br>
-                    <input type="text" class="lname">
-                </div>
+            <div class="info">
+                <label for="age">AGE:</label>
+                <input type="number" id="age" name="age" min="1" required>
+            </div>
 
-                <div>
-                    <label for="sex" style="margin-right: 100px;">SEX:</label>
-                    <input type="radio" id="Male" name="Sex" value="Male" required>
-                    <label for="Male">Male</label>
-                    <input type="radio" id="female" name="Sex" value="female" required>
-                    <label for="female">Female</label>
-                </div>
+            <div class="info">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
+            </div>
 
-                <div class="information">
-                    <label for="age">AGE:</label>
-                    <br>
-                    <input type="number" class="age">
-                </div>
+            <div class="info">
+                <label for="birthDate">BIRTH DATE:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
 
-                <div class="information">
-                    <label for="email">EMAIL:</label>
-                    <br>
-                    <input type="email" class="email">
-                </div>
+            <div class="info">
+                <label for="birthPlace">BIRTH PLACE:</label>
+                <input type="text" id="birthPlace" name="birthPlace" required>
+            </div>
 
-                <div class="information">
-                    <label for="bday">BIRTH DATE:</label>
-                    <br>
-                    <input type="date" class="bday">
-                </div>
+            <div class="info">
+                <label for="homeAddress">HOME ADDRESS:</label>
+                <input type="text" id="homeAddress" name="homeAddress" required>
+            </div>
 
-                <div class="information">
-                    <label for="birthplace">BIRTH PLACE:</label>
-                    <br>
-                    <input type="text" class="birthplace">
-                </div>
+            <div class="info">
+                <label for="contactNumber">CONTACT NUMBER:</label>
+                <input type="text" id="contactNumber" name="contactNumber" required>
+            </div>
 
-                <div class="information">
-                    <label for="address">HOME ADDRESS:</label>
-                    <br>
-                    <input type="text" class="address">
-
-                </div>
-
-                <div class="information">
-                    <label for="contact">CONTACT NUMBER:</label>
-                    <br>
-                    <input type="number" class="contact">
-                </div>
-
-                <div class="button-group">
-                    <button class="btn1"><a href="index.html">BACK</a></button>
-                    <button class="btn2"><a href="page3.html">SUBMIT</a></button>
-                </div>
+            <div class="button-group">
+                <button type="button" class="back-btn"><a href="index.html">BACK</a></button>
+                <button type="submit" class="submit-btn"><a href="page3.html">SUBMIT</a></button>
+            </div>
         </form>
-
     </div>
-
-
 </body>
-
 </html>
