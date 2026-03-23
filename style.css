@@ -210,7 +210,7 @@ table th {
     padding-bottom: 30px;
 }
 
-footer {
+.outro-text {
     background-color: #ffe7c2;
     margin: 0 auto 40px;
     font-size: 16px;
@@ -218,6 +218,15 @@ footer {
     padding: 0 20px;
 }
 
-.footer p {
+.outro-text p {
     margin-bottom: 15px;
+}
+
+footer {
+    background-color: #ffe7c2;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 20px;
+
 }
